@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta rel="stylesheet" href="css/style.css">
+    <title>Седона</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <div class="index-logo">
+          <a href="index.html">
+            <img src="img/index-logo.png" width="145" height="65">
+          </a>
+        </div>
+        <nav class="main-navigation">
+          <ul class="main-menu">
+            <li class="main-menu-item">
+              <a class="main-menu-link" href="#">Информация</a>
+            </li>
+            <li class="main-menu-item">
+              <a class="main-menu-link" href="#">Фото и видео</a>
+            </li>
+            <li class="main-menu-item">
+              <a class="main-menu-link" href="#">Карта штата</a>
+            </li>
+            <li class="main-menu-item">
+              <a class="main-menu-link" href="#">Гостиницы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <section class="filter">
+        <form class="filter-form" action="/echo" method="post">
+          <fieldset class="infrastructure">
+            <legend>Инфраструктура:</legend>
+            <input type="checkbox" name="swim" id="swim" checked>
+            <label for="swim">Бассейн</label>
+            <input type="checkbox" name="parking" id="parking">
+            <label for="parking">Парковка</label>
+            <input type="checkbox" name="wi-fi" id="wi-fi">
+            <label for="wi-fi">Wi-Fi</label>
+          </fieldset>
+          <fieldset class="type-house">
+            <legend>Тип жилья:</legend>
+            <input type="checkbox" name="hotel" id="hotel" checked>
+            <label for="wi-fi">Гостиница</label>
+            <input type="checkbox" name="motel" id="motel" checked>
+            <label for="wi-fi">Мотель</label>
+            <input type="checkbox" name="apart" id="apart" checked>
+            <label for="wi-fi">Апартаменты</label>
+          </fieldset>
+          <fieldset class="cost">
+            <legend>Стоимость в сутки:</legend>
+            <table class="min-max">
+              <tr class="min-max-string">
+                <td class="min">От 0</td>
+                <td class="max">До 3000</td>
+              </tr>
+            </table>
+            <input type="range" min="0" max="3000">
+          </fieldset>
+          <button class="filter-btn" type="submit">Показать</button>
+        </form>
+      </section>
+      <div class="resault">
+        <h2>Найдено:3</h2>
+        <ul>
+          <li class="sort-title">Сортировка:</li>
+          <li class="sort-item"><a class="active-item" href="#" >По цене</a></li>
+          <li class="sort-item"><a class="non-active-item" href="#" >По типу</a></li>
+          <li class="sort-item"><a class="non-active-item" href="#" >По рейтингу</a></li>
+        </ul>
+        <div class="arrows">
+          <a class="arrow-top"><img src="img/arrow-icon.png"></a>
+          <a class="arrow-down"><img src="img/arrow-icon.png"></a>
+        </div>
+      </div>
+      <section class="hotels">
+        <div class="hotel-info">
+          <div class="hotel-img">
+            <img src="img/amara.png" width="135" height="90" alt="amara">
+          </div>
+          <h3 class="hotel-name">Amara Resort & Spa</h3>
+          <p>
+            <span class="type">Гостиница</span><span class="price">От 3500 Р</span>
+          </p>
+          <div class="info-reserv">
+             <a class="info" href="#">Подробнее</a>
+             <a class="reserv" href="#">Забронировать</a>
+          </div>
+          <div class="rating-stars">
+            <div class="stars">
+              <img src="img/stars.png" width="" height="" alt="stars">
+            </div>
+            <span class="rating">8.5</span>
+          </div>
+        </div>
+        <div class="hotel-info">
+          <div class="hotel-img">
+            <img src="img/desert.png" width="135" height="90" alt="desert">
+          </div>
+          <h3 class="hotel-name">Desert Qual Inn</h3>
+          <p>
+            <span class="type">Мотель</span><span class="price">От 2000 Р</span>
+          </p>
+          <div class="info-reserv">
+             <a class="info" href="#">Подробнее</a>
+             <a class="reserv" href="#">Забронировать</a>
+          </div>
+          <div class="rating-stars">
+            <div class="stars">
+              <img src="img/stars.png" width="" height="" alt="stars">
+            </div>
+            <span class="rating">8.9</span>
+          </div>
+        </div>
+        <div class="hotel-info">
+          <div class="hotel-img">
+            <img src="img/villas.png" width="135" height="90" alt="villas">
+          </div>
+          <h3 class="hotel-name">Villas at Poco Diablo</h3>
+          <p>
+            <span class="type">Аппартаменты</span><span class="price">От 4000 Р</span>
+          </p>
+          <div class="info-reserv">
+             <a class="info" href="#">Подробнее</a>
+             <a class="reserv" href="#">Забронировать</a>
+          </div>
+          <div class="rating-stars">
+            <div class="stars">
+              <img src="img/stars.png" width="" height="" alt="stars">
+            </div>
+            <span class="rating">9.2</span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="container">
+        <section class="footer-contacts">
+          <a class="social-link" href="#"><span>#VISITSEDONA</span></a>
+        </section>
+        <section class="footer-social">
+          <a class="social-btn social-btn-tw" href="#">Твиттер</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-yt" href="#">Ютуб</a>
+        </section>
+        <section class="footer-copyright">
+          <p>Website by</p>
+          <a class="icon" href="https://htmlacademy.ru">HTML Academy</a>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
