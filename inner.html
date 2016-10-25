@@ -9,7 +9,7 @@
     <header class="main-header">
       <div class="container">
         <div class="index-logo">
-          <a href="#">
+          <a href="index.html">
             <img src="img/index-logo.png" width="145" height="65">
           </a>
         </div>
@@ -55,10 +55,14 @@
           <fieldset class="cost">
             <legend>Стоимость в сутки:</legend>
             <div class="min-max">
-              <input type="number" min="0" value="0">
-              <input type="number" min="0" value="3000">
+              <label for="min">От</label>
+              <input type="text" name="min" id="min" value="0">
+              <label for="max">До</label>
+              <input type="text" name="max" id="max" value="3000">
             </div>
-            <input type="range" min="0" max="3000">
+            <div class="range-slider">
+
+            </div>
           </fieldset>
           <button class="filter-btn" type="submit">Показать</button>
         </form>
