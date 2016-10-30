@@ -3,36 +3,36 @@
   <head>
     <meta charset="utf-8">
     <link href="css/style.css" rel="stylesheet">
-    <title>Седона</title>
+    <title>Седона-гостиницы</title>
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
+      <div class="container clearfix">
         <div class="index-logo">
           <a href="index.html">
-            <img src="img/index-logo.png" width="138" height="70">
+            <img src="img/index-logo.png" width="138" height="73">
           </a>
         </div>
         <nav class="main-navigation">
           <ul class="main-menu">
             <li class="main-menu-item">
-              <a class="main-menu-link" href="#">Информация</a>
+              <a class="main-menu-link" href="#">ИНФОРМАЦИЯ</a>
             </li>
             <li class="main-menu-item">
-              <a class="main-menu-link" href="#">Фото и видео</a>
+              <a class="main-menu-link" href="#">ФОТО И ВИДЕО</a>
             </li>
             <li class="main-menu-item">
-              <a class="main-menu-link" href="#">Карта штата</a>
+              <a class="main-menu-link" href="#">КАРТА ШТАТА</a>
             </li>
             <li class="main-menu-item">
-              <a class="main-menu-link" href="#">Гостиницы</a>
+              <a class="main-menu-link" href="#">ГОСТИНИЦЫ</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
-    <main class="container">
-      <section class="filter">
+    <main class="container clearfix">
+      <section class="filter clearfix">
         <form class="filter-form" action="/echo" method="post">
           <fieldset class="infrastructure">
             <legend>Инфраструктура:</legend>
@@ -63,13 +63,14 @@
             <div class="range-slider">
 
             </div>
+            <button class="filter-btn" type="submit">Показать</button>
           </fieldset>
-          <button class="filter-btn" type="submit">Показать</button>
+
         </form>
       </section>
-      <div class="resault">
-        <h2>Найдено:3</h2>
-        <ul>
+      <div class="resault clearfix">
+        <ul class="sort-menu">
+          <h2 class="resault-number">Найдено:3</h2>
           <li class="sort-title">Сортировка:</li>
           <li class="sort-item"><a class="active-item" href="#" >По цене</a></li>
           <li class="sort-item"><a class="non-active-item" href="#" >По типу</a></li>
@@ -85,13 +86,15 @@
           <div class="hotel-img">
             <img src="img/amara.jpg" width="135" height="90" alt="amara">
           </div>
-          <h3 class="hotel-name">Amara Resort & Spa</h3>
-          <p>
+          <div class="hotel">
+            <h3 class="hotel-name">Amara Resort & Spa</h3>
+            <p>
             <span class="type">Гостиница</span><span class="price">От 3500 Р</span>
-          </p>
-          <div class="info-reserv">
-             <a class="info" href="#">Подробнее</a>
-             <a class="reserv" href="#">Забронировать</a>
+            </p>
+            <div class="info-reserv">
+              <a class="info" href="#">Подробнее</a>
+              <a class="reserv" href="#">Забронировать</a>
+            </div>
           </div>
           <div class="rating-stars">
             <div class="stars">
@@ -104,13 +107,15 @@
           <div class="hotel-img">
             <img src="img/desert.jpg" width="135" height="90" alt="desert">
           </div>
-          <h3 class="hotel-name">Desert Qual Inn</h3>
-          <p>
-            <span class="type">Мотель</span><span class="price">От 2000 Р</span>
-          </p>
-          <div class="info-reserv">
-             <a class="info" href="#">Подробнее</a>
-             <a class="reserv" href="#">Забронировать</a>
+          <div class="hotel">
+            <h3 class="hotel-name">Desert Qual Inn</h3>
+            <p>
+              <span class="type">Мотель</span><span class="price">От 2000 Р</span>
+            </p>
+            <div class="info-reserv">
+               <a class="info" href="#">Подробнее</a>
+               <a class="reserv" href="#">Забронировать</a>
+            </div>
           </div>
           <div class="rating-stars">
             <div class="stars">
@@ -123,13 +128,15 @@
           <div class="hotel-img">
             <img src="img/villas.jpg" width="135" height="90" alt="villas">
           </div>
-          <h3 class="hotel-name">Villas at Poco Diablo</h3>
-          <p>
-            <span class="type">Аппартаменты</span><span class="price">От 4000 Р</span>
-          </p>
-          <div class="info-reserv">
-             <a class="info" href="#">Подробнее</a>
-             <a class="reserv" href="#">Забронировать</a>
+          <div class="hotel">
+            <h3 class="hotel-name">Villas at Poco Diablo</h3>
+            <p>
+              <span class="type">Аппартаменты</span><span class="price">От 4000 Р</span>
+            </p>
+            <div class="info-reserv">
+               <a class="info" href="#">Подробнее</a>
+               <a class="reserv" href="#">Забронировать</a>
+            </div>
           </div>
           <div class="rating-stars">
             <div class="stars">
@@ -141,7 +148,7 @@
       </section>
     </main>
     <footer class="main-footer">
-      <div class="container">
+      <div class="container clearfix">
         <section class="footer-contacts">
           <a class="social-link" href="#"><span>#VISITSEDONA</span></a>
         </section>
