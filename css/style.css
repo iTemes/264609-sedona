@@ -60,7 +60,7 @@ b {
 }
 
 .main-header {
-  min-height: 56px;
+  min-height: 26px;
   outline: 2px solid green;
 }
 /*Меню*/
@@ -102,6 +102,7 @@ b {
   line-height: 26px;
   font-weight: bold;
   color:black;
+  padding:15px 0;
 }
 
 .index-logo {
@@ -257,28 +258,43 @@ b {
 
 
 .filter-form {
+  display:flex;
   width:1056px;
   margin:0 auto;
   outline: 1px solid blue;
 }
 
+.option-group {
+  margin-top:25px;
+}
+
 .infrastructure {
-  float:left;
-  width:145px;
+  display:flex;
+  width:241px;
   min-height: 217px;
-  margin-right: 100px;
+
 }
 
 .type-house {
-  float:left;
-  width: 160px;
+  display:flex;
+  width: 288px;
   min-height: 217px;
+  margin-right: 200px;
 }
 
 .cost {
-  float:right;
+  display:flex;
   width: 328px;
   min-height: 217px;
+}
+
+.min-max {
+  display:flex;
+}
+
+.filter-btn {
+  margin:50px auto;
+
 }
 
 .resault {
@@ -312,7 +328,6 @@ b {
   float:left;
   width:361px;
   min-height: 151px;
-  margin-right: 280px;
   outline: 1px solid yellow;
 }
 
@@ -325,6 +340,7 @@ b {
 }
 
 .hotel-info {
+  min-height: 0;
   outline: 1px solid blue;
 }
 

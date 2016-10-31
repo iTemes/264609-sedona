@@ -16,16 +16,16 @@
         <nav class="main-navigation">
           <ul class="main-menu">
             <li class="main-menu-item">
-              <a class="main-menu-link" href="#">ИНФОРМАЦИЯ</a>
+              <a class="main-menu-link" href="#footer">ИНФОРМАЦИЯ</a>
             </li>
             <li class="main-menu-item">
               <a class="main-menu-link" href="#">ФОТО И ВИДЕО</a>
             </li>
             <li class="main-menu-item">
-              <a class="main-menu-link" href="#">КАРТА ШТАТА</a>
+              <a class="main-menu-link" href="#map">КАРТА ШТАТА</a>
             </li>
             <li class="main-menu-item">
-              <a class="main-menu-link" href="#">ГОСТИНИЦЫ</a>
+              <a class="main-menu-link" href="inner.html">ГОСТИНИЦЫ</a>
             </li>
           </ul>
         </nav>
@@ -112,10 +112,10 @@
           и мы покажем вам лучшие предложения гостиниц в седоне
         </p>
       </div>
-      <div class="map">
+      <div class="map" id="map">
         <img src="img/map.png" width="1200" height="470" alt="map-img">
       </div>
-      <form class="hotel-search" action="/echo" method="post">
+      <form class="hotel-search" action="/echo" method="post" name="">
         <legend>Поиск гостиницы в Седоне</legend>
         <div class="arrival">
           <label for="arrival-date">Дата заезда</label>
@@ -136,7 +136,7 @@
         <button class="search-btn" type="submit">Найти</button>
       </form>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer" id="footer">
       <div class="container clearfix">
         <section class="footer-contacts">
           <a class="social-link" href="#"><span>#VISITSEDONA</span></a>
