@@ -2,7 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link  rel="stylesheet" href="css/style.css">
     <title>Седона</title>
   </head>
   <body>
@@ -10,10 +12,10 @@
       <div class="container clearfix">
         <div class="index-logo">
           <a href="index.html">
-            <img src="img/index-logo.png" width="138" height="73">
+            <img src="img/index-logo.png" width="138" height="71" alt="logo">
           </a>
         </div>
-        <nav class="main-navigation">
+        <nav class="main-navigation clearfix">
           <ul class="main-menu">
             <li class="main-menu-item">
               <a class="main-menu-link" href="#footer">ИНФОРМАЦИЯ</a>
@@ -33,7 +35,7 @@
     </header>
     <main class="container clearfix">
       <div class="main-img">
-        <img src="img/main-img.jpg" width="1200" height="510">
+        <img src="img/main-img.jpg" width="1200" height="508" alt="main-img">
       </div>
       <section class="reasons clearfix">
         <div class="slogan">
@@ -47,7 +49,7 @@
         <div class="reasons-line clearfix">
           <div class="reason">
             <b class="reason-name">НАСТОЯЩИЙ ГОРОДОК</b>
-            <p>№1</p>
+            <p>-№1-</p>
             <p>СЕДОНА — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
           </div>
           <div class="reason-img">
@@ -57,18 +59,18 @@
         <!-- Вторая строка -->
         <div class="reasons-line clearfix">
            <!--Блок-1  -->
-          <div class="reasons-line-description housing">
-            <b class="reasons-description-name">Жилье</b>
-            <p>Рекомендуем пожить в настоящем мотеле,как в кино!</p>
+          <div class=" housing">
+            <b class="reasons-name">Жилье</b>
+            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
           <!--Блок-2  -->
-          <div class="reasons-line-description food">
-            <b class="reasons-description-name">Еда</b>
-            <p>Всегда заказывайте фирменный бургер,вы не разочаруетесь!</p>
+          <div class="food">
+            <b class="reasons-name">Еда</b>
+            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </div>
           <!--Блок-3  -->
-          <div class="reasons-line-description presents">
-            <b class="reasons-description-name">Сувениры</b>
+          <div class=" presents">
+            <b class="reasons-name">Сувениры</b>
             <p>Не только китайского, но и местного производства!</p>
           </div>
         </div>
@@ -79,28 +81,28 @@
           </div>
           <div class="reason">
             <b class="reason-name">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</b>
-            <p>№1</p>
-            <p>СЕДОНА — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+            <p>=№2-</p>
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
         </div>
         <!--Четвертая строка  -->
         <div class="reasons-line clearfix">
           <!-- Блок-1 -->
           <div class="reasons-block">
-            <b class="reasons-description-name">НЕБОЛЬШАЯ ПЛОЩАДЬ</b>
-            <p>№3</p>
+            <b class="reasons-block-name">НЕБОЛЬШАЯ ПЛОЩАДЬ</b>
+            <p>-№3-</p>
             <p>Все достопримечательности находятся очень близко</p>
           </div>
           <!-- Блок-2 -->
           <div class="reasons-block">
-            <b class="reasons-description-name">КРАСИВАЯ ДОРОГА</b>
-            <p>№4</p>
+            <b class="reasons-block-name">КРАСИВАЯ ДОРОГА</b>
+            <p>-№4-</p>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
           <!-- Блок-3 -->
           <div class="reasons-block">
-            <b class="reasons-description-name">МАЛО ТУРИСТОВ</b>
-            <p>№5</p>
+            <b class="reasons-block-name">МАЛО ТУРИСТОВ</b>
+            <p>-№5-</p>
             <p>Большинство едет в Гранд-Каньон и толпится там!</p>
           </div>
         </div>
@@ -108,30 +110,28 @@
       <div class="interested">
         <b class="interested-title">ЗАИНТЕРЕСОВАЛИСЬ?</b>
         <p>
-          Укажите предполагаемые даты поездки,
+          Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в седоне
         </p>
       </div>
       <div class="map" id="map">
         <img src="img/map.png" width="1200" height="470" alt="map-img">
       </div>
-      <form class="hotel-search" action="/echo" method="post" name="">
-        <legend>Поиск гостиницы в Седоне</legend>
+      <form class="hotel-search" action="/echo" method="post" name="hotel-search">
+        <h3>Поиск гостиницы в Седоне</h3>
         <div class="arrival">
-          <label for="arrival-date">Дата заезда</label>
+          <label for="arrival-date">Дата заезда :</label>
           <input type="text" name="arrival-date" id="arrival-date">
         </div>
         <div class="departure">
-          <label for="departure-date">Дата выезда</label>
+          <label for="departure-date">Дата выезда:</label>
           <input type="text" name="departure-date" id="departure-date">
         </div>
         <div class="half-width">
           <label for="people-number">Взрослые:</label>
-          <input type="number" name="people-number" id="people-number" min="0">
-        </div>
-        <div class="half-width">
+          <input type="text" name="people-number" id="people-number" >
           <label for="child-number">Дети:</label>
-          <input type="number" name="child-number" id="child-number" min="0">
+          <input type="text" name="child-number" id="child-number" >
         </div>
         <button class="search-btn" type="submit">Найти</button>
       </form>
@@ -139,7 +139,7 @@
     <footer class="main-footer" id="footer">
       <div class="container clearfix">
         <section class="footer-contacts">
-          <a class="social-link" href="#"><span>#VISITSEDONA</span></a>
+          <a class="social-link" href="#">#VISITSEDONA</a>
         </section>
         <section class="footer-social">
           <a class="social-btn social-btn-tw" href="#">Твиттер</a>
@@ -147,14 +147,12 @@
           <a class="social-btn social-btn-yt" href="#">Ютуб</a>
         </section>
         <section class="footer-copyright">
-          <p>Website by</p>
-          <a class="icon" href="https://htmlacademy.ru">
-            <img src="img/html-icon.png" width="113" height="39" alt="html-logo">
-          </a>
+            <span class="copyright">Website by</span>
+            <a class="icon" href="https://htmlacademy.ru">
+              <img src="img/html-icon.png" width="113" height="39" alt="html-logo">
+            </a>
         </section>
       </div>
     </footer>
-
-
   </body>
 </html>
