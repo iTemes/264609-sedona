@@ -27,7 +27,7 @@
               <a class="main-menu-link" href="index.html#map">КАРТА ШТАТА</a>
             </li>
             <li class="main-menu-item">
-              <a class="main-menu-link" href="inner.html">ГОСТИНИЦЫ</a>
+              <a class="main-menu-link visited" href="inner.html">ГОСТИНИЦЫ</a>
             </li>
           </ul>
         </nav>
@@ -70,10 +70,10 @@
             <div class="filter-range-title">Стоимость в сутки(Р):</div>
             <div class="price-controls">
               <label class="min">
-                От <input type="text" name="min" id="min" value="0">
+                <input type="text" name="min" id="min" placeholder="ОТ 0">
               </label>
               <label class="max">
-                До <input type="text" name="max" id="max" value="3000">
+                <input type="text" name="max" id="max" placeholder="ДО 3000">
               </label>
             </div>
             <div class="range-controls">
@@ -89,6 +89,8 @@
       </section>
       <div class="resault">
         <span class="resault-number">Найдено: 3</span>
+        <a class="top-arrow"></a>
+        <a class="down-arrow"></a>
         <ul class="sort-menu">
           <li class="sort-title">Сортировка:</li>
           <li class="sort-item"><a class="active-item" href="#" >По цене</a></li>
@@ -160,7 +162,7 @@
         <section class="footer-copyright">
           <span class="copyright">Website by</span>
           <a class="icon" href="https://htmlacademy.ru">
-              <img src="img/html-icon.png" width="113" height="39" alt="html-logo">
+            <span class="icon-logo"></span>
           </a>
         </section>
       </div>

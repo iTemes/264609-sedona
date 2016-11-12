@@ -113,25 +113,37 @@
           Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в седоне
         </p>
+        <span class="btn-search">Поиск гостиницы в Седоне</span>
       </div>
       <div class="map" id="map">
         <img src="img/map.png" width="1200" height="470" alt="map-img">
       </div>
       <form class="hotel-search" action="/echo" method="post" name="hotel-search">
-        <h3>Поиск гостиницы в Седоне</h3>
         <div class="arrival">
           <label for="arrival-date">Дата заезда :</label>
           <input type="text" name="arrival-date" id="arrival-date">
+          <span class="calendar"></span>
         </div>
         <div class="departure">
           <label for="departure-date">Дата выезда:</label>
           <input type="text" name="departure-date" id="departure-date">
+          <span class="calendar"></span>
         </div>
         <div class="half-width">
-          <label for="people-number">Взрослые:</label>
+          <label for="people-number">
+            Взрослые:
+            <span class="minus-people"></span>
+            <span class="plus-people"></span>
+          </label>
           <input type="text" name="people-number" id="people-number" >
-          <label for="child-number">Дети:</label>
+
+          <label for="child-number">
+            Дети:
+            <span class="minus-child"></span>
+            <span class="plus-child"></span>
+          </label>
           <input type="text" name="child-number" id="child-number" >
+
         </div>
         <button class="search-btn" type="submit">Найти</button>
       </form>
@@ -149,7 +161,7 @@
         <section class="footer-copyright">
             <span class="copyright">Website by</span>
             <a class="icon" href="https://htmlacademy.ru">
-              <img src="img/html-icon.png" width="113" height="39" alt="html-logo">
+              <span class="icon-logo"></span>
             </a>
         </section>
       </div>
