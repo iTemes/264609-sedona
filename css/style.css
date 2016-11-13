@@ -1212,7 +1212,7 @@ input[type="checkbox"]:checked + label::before {
 }
 .reserv:active {
   background-color: #503e33;
-  color: #
+  color: #7b6d65;
 }
 
 
