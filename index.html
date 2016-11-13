@@ -11,7 +11,7 @@
     <header class="main-header">
       <div class="container clearfix">
         <div class="index-logo">
-          <a href="index.html">
+          <a href="#">
             <img src="img/index-logo.png" width="138" height="71" alt="logo">
           </a>
         </div>
@@ -43,7 +43,7 @@
             СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,<br>
             ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!
           </h2>
-          <p>РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
+          <p>РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!d</p>
         </div>
         <!--Первая строка  -->
         <div class="reasons-line clearfix">
@@ -113,10 +113,12 @@
           Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в седоне
         </p>
-        <span class="btn-search">Поиск гостиницы в Седоне</span>
+        <a class="btn-modal" href="#">Поиск гостиницы в Седоне</a>
       </div>
       <div class="map" id="map">
-        <img src="img/map.png" width="1200" height="470" alt="map-img">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d702898.7437277016!2d-111.91040446573966!3d35.076638901458885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1479039821159"
+          width="1200" height="470" style="border:0" allowfullscreen>
+        </iframe>
       </div>
       <form class="hotel-search" action="/echo" method="post" name="hotel-search">
         <div class="arrival">
@@ -166,5 +168,6 @@
         </section>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
