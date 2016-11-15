@@ -63,6 +63,7 @@ img {
 
 .main-menu-item {
   display: inline-block;
+  vertical-align: top;
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
@@ -226,7 +227,7 @@ img {
 
 .housing::before {
   content: "";
-  position: absolute; /*позиционирование*/
+  position: absolute;
   top: 61px;
   left: 164px;
   display: block;
@@ -237,7 +238,7 @@ img {
 
 .food::before {
   content: "";
-  position: absolute; /*позиционирование*/
+  position: absolute;
   top: 63px;
   left: 164px;
   display: block;
@@ -248,7 +249,7 @@ img {
 
 .presents::before {
   content: "";
-  position: absolute; /*позиционирование*/
+  position: absolute;
   top: 59px;
   left: 168px;
   display: block;
@@ -409,19 +410,20 @@ iframe {
   right:62px;
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
-  background-position: -267px -25px;
+  background-position: -149px -37px;
+  cursor: pointer;
 
 }
 
 .arrival .calendar:hover {
 
-  background-position: -128px -57px;
+  background-position: -211px -37px;
 
 }
 
 .arrival .calendar:active {
 
-  background-position: -298px -25px;
+  background-position: -180px -37px;
 
 }
 
@@ -434,19 +436,20 @@ iframe {
   right: 62px;
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
-  background-position: -267px -25px;
+  background-position: -149px -37px;
+  cursor: pointer;
 
 }
 
 .departure .calendar:hover {
 
-  background-position: -128px -57px;
+  background-position: -211px -37px;
 
 }
 
 .departure .calendar:active {
 
-  background-position: -298px -25px;
+  background-position: -180px -37px;
 }
 
 
@@ -462,12 +465,12 @@ iframe {
 
 .arrival {
   margin-left: 56px;
-  margin-bottom: 27px;
+  margin-bottom: 32px;
 }
 
 .departure {
   margin-left: 54px;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 
 .half-width {
@@ -503,19 +506,19 @@ iframe {
   left: 125px;
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
-  background-position: -211px -57px;
+  background-position: -306px -74px;
   cursor: pointer;
 
 }
 
 .half-width .minus-people:hover{
 
-  background-position: -255px -57px;
+  background-position: -27px -87px;
 }
 
 .half-width .minus-people:active{
 
-  background-position: -233px -57px;
+  background-position: -5px -87px;
 }
 
 
@@ -528,18 +531,18 @@ iframe {
   left: 201px;
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
-  background-position: -277px -57px;
+  background-position: -49px -87px;
   cursor: pointer;
 }
 
 .half-width .plus-people:hover {
 
-  background-position: -5px -135px;
+  background-position: -91px -87px;
 }
 
 .half-width .plus-people:active {
 
-  background-position: -298px -57px;
+  background-position: -70px -87px;
 }
 
 .half-width .minus-child {
@@ -551,18 +554,18 @@ iframe {
   left: 82px;
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
-  background-position: -211px -57px;
+  background-position: -306px -74px;
   cursor: pointer;
 }
 
 .half-width .minus-child:hover {
 
-  background-position: -255px -57px;
+  background-position: -27px -87px;
 }
 
 .half-width .minus-child:active {
 
-  background-position: -233px -57px;
+  background-position: -5px -87px;
 }
 
 .half-width .plus-child {
@@ -574,17 +577,17 @@ iframe {
   left: 158px;
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
-  background-position: -277px -57px;
+  background-position: -49px -87px;
   cursor: pointer;
 }
 
 .half-width .plus-child:hover {
-  background-position: -5px -135px;
+  background-position: -91px -87px;
 }
 
 .half-width .plus-child:active {
 
-  background-position: -298px -57px;
+  background-position: -70px -87px;
 }
 
 .search-btn {
@@ -670,19 +673,19 @@ iframe {
 .social-btn-yt::before {
     width: 20px;
     height: 17px;
-    background-position: -63px -168px;
+    background-position: -128px -132px;
 }
 
 .social-btn-tw::before {
     width: 17px;
     height: 15px;
-    background-position: -36px -168px;
+    background-position: -302px -87px;
 }
 
 .social-btn-fb::before {
     width: 10px;
     height: 19px;
-    background-position: -191px -57px;
+    background-position: -306px -45px;
 }
 
 .social-btn:hover {
@@ -691,6 +694,18 @@ iframe {
 
 .social-btn:active {
   background-color: #5496bd;
+}
+
+.social-btn-fb:active::before {
+  background-position: -128px -74px;
+}
+
+.social-btn-tw:active::before {
+  background-position: -271px -112px;
+}
+
+.social-btn-yt:active::before {
+  background-position: -158px -132px;
 }
 
 .footer-copyright {
@@ -721,12 +736,12 @@ iframe {
 
 .icon-logo:hover {
 
-  background-position: -191px -86px;
+  background-position: -5px -118px;
 }
 
 .icon-logo:active {
 
-  background-position: -5px -86px;
+  background-position: -148px -69px;
 }
 /*inner.html*/
 .filter {
@@ -812,7 +827,7 @@ input[type="checkbox"] + label {
   background-repeat: no-repeat;
   width: 22px;
   height: 22px;
-  background-position: -159px -57px;
+  background-position: -242px -37px;
 
   position: absolute;
   top:-2px;
@@ -826,7 +841,7 @@ input[type="checkbox"] + label {
   background-repeat: no-repeat;
   width: 22px;
   height: 22px;
-  background-position: -159px -57px;
+  background-position: -242px -37px;
 
   position: absolute;
   top:-2px;
@@ -837,10 +852,37 @@ input[type="checkbox"]:checked + label::before {
   content: "";
   width: 26px;
   height: 22px;
-  background-position: -231px -5px;
   background-image: url("../img/sprite.png");
+  background-position: -267px -5px;
 }
 
+input[type="checkbox"]:disabled + label::before {
+  content: "";
+  display: block;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 22px;
+  background-position: -274px -45px;
+
+  position: absolute;
+  top:;
+  left:;
+}
+
+input[type="checkbox"]:checked:disabled + label::before {
+  content: "";
+  display: block;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 22px;
+  background-position: -274px -45px;
+
+  position: absolute;
+  top:;
+  left:;
+}
 /*Фильтр*/
 .filter-range {
   float: right;
@@ -1021,25 +1063,21 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .resault .top-arrow:hover{
-  content: "";
-  position: absolute;
-  right: 0px;
-  top:10px;
-  border: 6px solid transparent;
+
   border-top: 9px solid #000;
-  cursor: pointer;
+
 }
 
 .resault .top-arrow:active{
-  content: "";
-  position: absolute;
-  right: 0px;
-  top:10px;
-  border: 6px solid transparent;
+
   border-top: 9px solid #81b3d2;
-  cursor: pointer;
 }
 
+.resault .top-arrow:focus{
+
+  border-top: 9px solid #81b3d2;
+
+}
 .resault .down-arrow{
   content: "";
   position: absolute;
@@ -1050,23 +1088,15 @@ input[type="checkbox"]:checked + label::before {
   cursor: pointer;
 }
 .resault .down-arrow:hover{
-  content: "";
-  position: absolute;
-  right: 21px;
-  top:4px;
-  border: 6px solid transparent;
   border-bottom: 9px solid #000;
-  cursor: pointer;
 }
 
 .resault .down-arrow:active{
-  content: "";
-  position: absolute;
-  right: 21px;
-  top:4px;
-  border: 6px solid transparent;
   border-bottom: 9px solid #81b3d2;
-  cursor: pointer;
+}
+
+.resault .down-arrow:focus{
+  border-bottom: 9px solid #81b3d2;
 }
 
 .sort-title {
