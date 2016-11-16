@@ -954,12 +954,38 @@ input[type="checkbox"]:checked:disabled + label::before {
   outline: none;
 }
 
-.price-controls input::-webkit-input-placeholder {
-  color: #fff;
-}
 
+.price-controls input::-webkit-input-placeholder {
+    color: #fff;
+}
+.price-controls input:-moz-placeholder {
+    /* FF 4-18 */
+    color: #fff;
+}
+.price-controls input::-moz-placeholder {
+    /* FF 19+ */
+    color: #fff;
+    opacity: 1;
+}
+.price-controls input:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #fff;
+    opacity: 1;
+}
 .price-controls input:focus::-webkit-input-placeholder {
   opacity:0;
+}
+.price-controls input:focus:-moz-placeholder {
+    /* FF 4-18 */
+    opacity: 0;
+}
+.price-controls input:focus::-moz-placeholder {
+    /* FF 19+ */
+    opacity: 0;
+}
+.price-controls input:focus:-ms-input-placeholder {
+    /* IE 10+ */
+    opacity: 0;
 }
 
 .range-controls {
@@ -1130,7 +1156,13 @@ input[type="checkbox"]:checked:disabled + label::before {
   border-bottom: 1px dashed #81b3d2;
 }
 .sort-item a:active {
+
   color:#000;
+  border:none;
+}
+ .item.active {
+  color:#81b3d2;
+  border: none;
 }
 
 .resault-number {
