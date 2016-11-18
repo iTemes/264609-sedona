@@ -126,27 +126,35 @@
       <form class="hotel-search" action="/echo" method="post" name="hotel-search">
         <div class="arrival">
           <label for="arrival-date">Дата заезда :</label>
-          <input type="text" name="arrival-date" id="arrival-date">
+          <input type="text" name="arrival-date" id="arrival-date" value="24 Апреля 2016">
           <span class="calendar"></span>
         </div>
         <div class="departure">
           <label for="departure-date">Дата выезда:</label>
-          <input type="text" name="departure-date" id="departure-date">
+          <input type="text" name="departure-date" id="departure-date" value="4 июля 2016">
           <span class="calendar"></span>
         </div>
         <div class="half-width">
-          <label for="people-number">
-            Взрослые:
-            <span class="minus-people"></span>
-            <span class="plus-people"></span>
-          </label>
-          <input type="text" name="people-number" id="people-number" >
-          <label for="child-number">
-            Дети:
-            <span class="minus-child"></span>
-            <span class="plus-child"></span>
-          </label>
-          <input type="text" name="child-number" id="child-number" >
+          <div class="people">
+            <label for="people-number">
+              Взрослые:
+            </label>
+            <div class="people-group">
+              <span class="minus-people"></span>
+              <span class="plus-people"></span>
+              <input type="text" name="people-number" id="people-number" value="2" >
+            </div>
+          </div>
+          <div class="child">
+            <label for="child-number">
+              Дети:
+            </label>
+            <div class="child-group">
+              <span class="minus-child"></span>
+              <span class="plus-child"></span>
+              <input type="text" name="child-number" id="child-number" value="0" >
+            </div>
+          </div>
         </div>
         <button class="search-btn" type="submit">Найти</button>
       </form>
