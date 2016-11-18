@@ -37,6 +37,7 @@ img {
   margin: 0 auto;
   padding: 0;
   position: relative;
+  background-color: #ffffff;
 }
 
 .main-header {
@@ -266,6 +267,7 @@ img {
 .interested {
   min-height: 240px;
   text-align: center;
+  background: #ffffff;
 }
 
 iframe {
@@ -606,6 +608,7 @@ iframe {
 }
 /*Подвал*/
 .main-footer {
+  background: #fefefe;
   color: #000;
 }
 
@@ -895,7 +898,7 @@ input[type="checkbox"]:checked:disabled+label::before {
   height: 22px;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
+  -webkit-transform:translate(-50%, -50%);
   transform: translate(-50%, -50%);
   background: #ffffff;
 }
@@ -1034,10 +1037,11 @@ input[type="checkbox"]:checked:disabled+label::before {
   width: 1056px;
   padding: 0 72px;
   margin: 0;
-  margin-top: 30px;
+  padding-top: 30px;
   padding-bottom: 34px;
   border-bottom: 1px solid #e5e5e5;
   position: relative;
+  background: #fefefe;
 }
 
 .sort-menu {
@@ -1158,6 +1162,7 @@ input[type="checkbox"]:checked:disabled+label::before {
 .hotels {
   width: 1200px;
   margin: 0 auto;
+  background: #fefefe;
 }
 
 .hotel-img {
