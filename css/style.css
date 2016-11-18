@@ -11,6 +11,7 @@ body {
   background: #f2f2f2;
   color: #333333;
   box-shadow: 0 0 10px 1px rgba(0,0,0,0.2);
+  position: relative;
 }
 
 b {
@@ -319,7 +320,7 @@ iframe {
   padding: 53px 0;
   position: absolute;
   box-sizing: border-box;
-  bottom: 85px;
+  bottom: 199px;
   left: 317px;
   font-family: inherit;
   font-size: 14px;
@@ -607,9 +608,19 @@ iframe {
   color: #88b6d1;
 }
 /*Подвал*/
+.main-footer.opacity {
+  background: #fefefe;
+  opacity: 0.9;
+  color: #000;
+  position: absolute;
+  bottom: 0;
+  z-index: 20;
+}
+
 .main-footer {
   background: #fefefe;
   color: #000;
+
 }
 
 .footer-contacts {
